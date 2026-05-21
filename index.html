@@ -2,11 +2,11 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <title>Design de Interação e Usabilidade: Guia de Personas</title>
+    <title>Design de InteraÃ§Ã£o e Usabilidade: Guia de Personas</title>
     <style>
         @page {
             size: A4;
-            margin: 20mm 12mm;
+            margin: 20mm 15mm;
             background-color: #ffffff;
             @bottom-right {
                 content: counter(page);
@@ -32,8 +32,8 @@
 
         /* Cover Header Banner */
         .header-banner {
-            margin: -20mm -12mm 25px -12mm;
-            padding: 40px 12mm;
+            margin: -20mm -15mm 25px -15mm;
+            padding: 40px 15mm;
             background-color: #2c3e50;
             color: #ffffff;
             border-bottom: 5px solid #16a085;
@@ -146,142 +146,56 @@
             font-weight: 500;
         }
 
-        /* Estilização Avançada das Imagens do Slide (Gráficos Comparativos) */
-        .visual-comparison-container {
-            margin: 25px 0;
-            border: 1px solid #ddd;
-            border-radius: 6px;
-            overflow: hidden;
-            display: table;
-            width: 100%;
-            page-break-inside: avoid;
-        }
-
-        .visual-comparison-column {
-            display: table-cell;
-            width: 50%;
-            vertical-align: top;
-            padding: 20px;
-        }
-
-        .comparison-header {
-            font-size: 14pt;
-            font-weight: bold;
-            text-transform: uppercase;
+        /* EstilizaÃ§Ã£o para as Imagens Embutidas */
+        .image-container {
             text-align: center;
-            margin-bottom: 15px;
-            padding-bottom: 5px;
-            border-bottom: 2px solid currentColor;
-        }
-
-        .comparison-avatar-placeholder {
-            width: 100px;
-            height: 100px;
-            border-radius: 50%;
-            margin: 0 auto 15px auto;
-            background-color: #e0e0e0;
-            display: block;
-            border: 3px solid #fff;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        }
-
-        .comparison-list {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
-
-        .comparison-list li {
-            padding: 6px 0;
-            border-bottom: 1px solid rgba(0,0,0,0.05);
-            font-size: 10pt;
-        }
-
-        /* Estilo da Persona Completa (Ficha da Sara) */
-        .persona-card {
-            border: 1px solid #e67e22;
-            border-top: 6px solid #e67e22;
-            background-color: #fffaf5;
-            padding: 20px;
             margin: 25px 0;
-            border-radius: 4px;
             page-break-inside: avoid;
-            display: table;
-            width: 100%;
         }
 
-        .persona-sidebar {
-            display: table-cell;
-            width: 30%;
-            vertical-align: top;
-            padding-right: 20px;
-            border-right: 1px solid #fadbd8;
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+            border: 1px solid #dcdde1;
+            border-radius: 6px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
         }
 
-        .persona-main-content {
-            display: table-cell;
-            width: 70%;
-            vertical-align: top;
-            padding-left: 20px;
-        }
-
-        .persona-title {
-            font-size: 16pt;
-            font-weight: bold;
-            color: #d35400;
-            margin: 0 0 5px 0;
-        }
-
-        .persona-subtitle {
-            font-style: italic;
+        .image-caption {
+            font-size: 9pt;
             color: #7f8c8d;
-            margin-bottom: 15px;
-            font-size: 10pt;
-        }
-
-        .persona-meta-item {
-            margin-bottom: 8px;
-            font-size: 9.5pt;
-        }
-
-        .persona-section-title {
-            font-weight: bold;
-            color: #e67e22;
-            text-transform: uppercase;
-            font-size: 9.5pt;
-            margin-top: 15px;
-            margin-bottom: 5px;
-            border-bottom: 1px solid #f5b041;
+            margin-top: 8px;
+            font-style: italic;
         }
     </style>
 </head>
 <body>
 
     <div class="header-banner">
-        <h1>Design de Interação e Usabilidade</h1>
-        <div class="subtitle">Guia Avançado de Personas</div>
+        <h1>Design de InteraÃ§Ã£o e Usabilidade</h1>
+        <div class="subtitle">Guia AvanÃ§ado de Personas</div>
     </div>
 
-    <h2>O que é Persona?</h2>
-    <p>A persona é um conceito fundamental e amplamente utilizado na carreira do UX/UI Designer, sendo peça-chave tanto na estruturação de portfólios quanto na execução de projetos reais. Essencialmente, a persona é a representação fictícia, porém baseada em dados, dos usuários de um determinado produto ou serviço. Através dessa ferramenta, torna-se possível desenvolver soluções de design que atendam perfeitamente às reais necessidades, dores e objetivos do público.</p>
+    <h2>O que Ã© Persona?</h2>
+    <p>A persona Ã© um conceito fundamental e amplamente utilizado na carreira do UX/UI Designer, sendo peÃ§a-chave tanto na estruturaÃ§Ã£o de portfÃ³lios quanto na execuÃ§Ã£o de projetos reais. Essencialmente, a persona Ã© a representaÃ§Ã£o fictÃ­cia, porÃ©m baseada em dados, dos usuÃ¡rios de um determinado produto ou serviÃ§o. AtravÃ©s dessa ferramenta, torna-se possÃ­vel desenvolver soluÃ§Ãµes de design que atendam perfeitamente Ã s reais necessidades, dores e objetivos do pÃºblico.</p>
 
-    <h2>Persona vs. Público-Alvo: Entendendo as Diferenças</h2>
-    <p>É muito comum que ocorrer confusão entre os termos persona e público-alvo, visto que ambos tratam do perfil de quem consome ou interage com uma marca. No entanto, eles operam em níveis de profundidade totalmente distintos:</p>
+    <h2>Persona vs. PÃºblico-Alvo: Entendendo as DiferenÃ§as</h2>
+    <p>Ã‰ muito comum que ocorra confusÃ£o entre os termos persona e pÃºblico-alvo, visto que ambos tratam do perfil de quem consome ou interage com uma marca. No entanto, eles operam em nÃ­veis de profundidade totalmente distintos:</p>
     
     <ul>
-        <li><strong>Público-alvo:</strong> Refere-se a uma definição macro e generalista. É um grupo de pessoas que compartilham características demográficas e socioeconômicas semelhantes, como faixa etária, localização e classe social, sem focar em um indivíduo específico.</li>
-        <li><strong>Persona:</strong> Representa um cliente ideal fictício com uma definição extremamente específica e humanizada. Ela é moldada a partir de pesquisas profundas de comportamento, hábitos e atributos reais extraídos diretamente dos clientes.</li>
+        <li><strong>PÃºblico-alvo:</strong> Refere-se a uma definiÃ§Ã£o macro e generalista. Ã‰ um grupo de pessoas que compartilham caracterÃ­sticas demogrÃ¡ficas e socioeconÃ´micas semelhantes, como faixa etÃ¡ria, localizaÃ§Ã£o e classe social, sem focar em um indivÃ­duo especÃ­fico.</li>
+        <li><strong>Persona:</strong> Representa um cliente ideal fictÃ­cio com uma definiÃ§Ã£o extremamente especÃ­fica e humanizada. Ela Ã© moldada a partir de pesquisas profundas de comportamento, hÃ¡bitos e atributos reais extraÃ­dos diretamente dos clientes.</li>
     </ul>
 
     <div class="grid-table">
         <div class="grid-row">
             <div class="grid-cell">
-                <div style="font-weight: bold; color: #7f8c8d; margin-bottom: 5px;">EXEMPLO DE PÚBLICO-ALVO</div>
-                <p style="font-size: 10pt; margin: 0;"><em>Loja de roupas femininas:</em> Mulheres com idade entre 40 e 50 anos, residentes em São Paulo e renda mensal acima de 8 salários mínimos.</p>
+                <div style="font-weight: bold; color: #7f8c8d; margin-bottom: 5px;">EXEMPLO DE PÃšBLICO-ALVO</div>
+                <p style="font-size: 10pt; margin: 0;"><em>Loja de roupas femininas:</em> Mulheres com idade entre 40 e 50 anos, residentes em SÃ£o Paulo e renda mensal acima de 8 salÃ¡rios mÃ­nimos.</p>
             </div>
             <div class="grid-cell accent">
                 <div style="font-weight: bold; color: #16a085; margin-bottom: 5px;">EXEMPLO DE PERSONA</div>
-                <p style="font-size: 10pt; margin: 0;"><strong>Joana, 50 anos:</strong> Mora em São Paulo, adora conversar com as amigas no WhatsApp, utiliza ativamente o Facebook e frequenta eventos sociais. Ela deseja ser vista no dia a dia como uma mulher séria, elegante e profissional.</p>
+                <p style="font-size: 10pt; margin: 0;"><strong>Joana, 50 anos:</strong> Mora em SÃ£o Paulo, adora conversar com as amigas no WhatsApp, utiliza ativamente o Facebook e frequenta eventos sociais. Ela deseja ser vista no dia a dia como uma mulher sÃ©ria, elegante e profissional.</p>
             </div>
         </div>
     </div>
@@ -291,157 +205,78 @@
         <div class="grid-table" style="margin: 0; border: none;">
             <div class="grid-row">
                 <div class="grid-cell" style="padding: 5px; border: none; background: transparent;">
-                    <strong>Felipe Ferreira, 32 anos:</strong> Publicitário recém-formado e autônomo. Busca se desenvolver profissionalmente por meio de um mestrado no exterior, pois ama viajar, é casado e sempre quis fazer um intercâmbio. Procura uma agência que o guie na busca por universidades europeias que aceitem alunos estrangeiros.
+                    <strong>Felipe Ferreira, 32 anos:</strong> PublicitÃ¡rio recÃ©m-formado e autÃ´nomo. Busca se desenvolver profissionalmente por meio de um mestrado no exterior, pois ama viajar, Ã© casado e sempre quis fazer um intercÃ¢mbio. Procura uma agÃªncia que o guie na busca por universidades europeias que aceitem alunos estrangeiros.
                 </div>
                 <div class="grid-cell" style="padding: 5px; border: none; background: transparent; padding-left: 15px;">
-                    <strong>Público Comparativo:</strong> Homens, entre 25 e 40 anos, classe média, brasileiros, formados em áreas correlatas (como Direito ou Comunicação), residindo no interior de São Paulo, que buscam recolocação profissional ou especialização.
+                    <strong>PÃºblico Compartativo:</strong> Homens, entre 25 e 40 anos, classe mÃ©dia, brasileiros, formados em Ã¡reas correlatas (como Direito ou ComunicaÃ§Ã£o), residindo no interior de SÃ£o Paulo, que buscam recolocaÃ§Ã£o profissional ou especializaÃ§Ã£o.
                 </div>
             </div>
         </div>
     </div>
 
-    <h2>Por que dados demográficos isolados falham? (Exemplos Práticos dos Slides)</h2>
-    <p>Para ilustrar perfeitamente a armadilha de planejar produtos usando apenas dados de público-alvo, os exemplos a seguir demonstram como pessoas com dados demográficos rigorosamente idênticos possuem perfis, estilos de vida e necessidades de interação totalmente opostos:</p>
+    <h2>Por que dados demogrÃ¡ficos isolados falham?</h2>
+    <p>Para ilustrar a armadilha de planejar produtos ou serviÃ§os baseando-se estritamente em recortes demogrÃ¡ficos gerais, veja a clÃ¡ssica analogia visual abaixo. Duas personalidades com perfis de pÃºblico-alvo perfeitamente idÃªnticos exigem experiÃªncias de produto e abordagens de design completamente distintas:</p>
 
-    <!-- Recriação Visual do Slide: Príncipe Charles vs Ozzy Osbourne -->
-    <div class="visual-comparison-container">
-        <div class="grid-row">
-            <div class="visual-comparison-column" style="background-color: #4a4a4a; color: white;">
-                <div class="comparison-header" style="color: #f1c40f;">PRÍNCIPE CHARLES</div>
-                <div class="comparison-avatar-placeholder" style="background-color: #7f8c8d;"></div>
-                <ul class="comparison-list">
-                    <li>• Homem</li>
-                    <li>• Nascido em 1948</li>
-                    <li>• Residente no Reino Unido</li>
-                    <li>• Casado 2 vezes</li>
-                    <li>• Mora num castelo</li>
-                    <li>• Classe A (Grande poder aquisitivo)</li>
-                </ul>
-            </div>
-            <div class="visual-comparison-column" style="background-color: #78281f; color: white;">
-                <div class="comparison-header" style="color: #e74c3c;">OZZY OSBOURNE</div>
-                <div class="comparison-avatar-placeholder" style="background-color: #922b21;"></div>
-                <ul class="comparison-list">
-                    <li>• Homem</li>
-                    <li>• Nascido em 1948</li>
-                    <li>• Residente no Reino Unido</li>
-                    <li>• Casado 2 vezes</li>
-                    <li>• Mora num castelo</li>
-                    <li>• Classe A (Grande poder aquisitivo)</li>
-                </ul>
-            </div>
-        </div>
+    <!-- Primeira Imagem: Ozzy e Charles -->
+    <div class="image-container">
+        <img src="src/images/Ozzy e Charles.jpg" alt="Comparativo PrÃ­ncipe Charles e Ozzy Osbourne">
+        <div class="image-caption">Figura 1: Mesmos dados demogrÃ¡ficos bÃ¡sicos, universos de comportamento e necessidades completamente opostos.</div>
     </div>
 
-    <p>Observe que, se criássemos uma interface de aplicativo voltada estritamente para o "Público-Alvo: Homens, nascidos em 1948, classe A do Reino Unido", ela deveria atender simultaneamente ao Rei da Inglaterra e ao lendário vocalista de Heavy Metal. Fica claro que as escolhas de linguagem, tom de voz e navegação seriam falhas se não humanizadas através de uma persona.</p>
+    <p>O mesmo fenÃ´meno de limitaÃ§Ã£o do pÃºblico-alvo pode ser observado no contexto nacional ao compararmos perfis que compartilham a mesma idade, regiÃ£o geogrÃ¡fica e atÃ© tÃ­tulos profissionais genÃ©ricos:</p>
 
-    <!-- Recriação Visual do Slide: Marcelo Camelo vs Padre Marcelo Rossi -->
-    <div class="visual-comparison-container">
-        <div class="grid-row">
-            <div class="visual-comparison-column" style="background-color: #27ae60; color: white;">
-                <div class="comparison-header" style="color: #fff;">MARCELO (CAMELO)</div>
-                <div class="comparison-avatar-placeholder" style="background-color: #1e8449;"></div>
-                <ul class="comparison-list">
-                    <li>• Homem</li>
-                    <li>• Nascido em 1968</li>
-                    <li>• Mora no Sudeste</li>
-                    <li>• Cantor e Escritor</li>
-                    <li>• Líder de comunidade</li>
-                </ul>
-            </div>
-            <div class="visual-comparison-column" style="background-color: #8e44ad; color: white;">
-                <div class="comparison-header" style="color: #fff;">MARCELO (ROSSI)</div>
-                <div class="comparison-avatar-placeholder" style="background-color: #6c3483;"></div>
-                <ul class="comparison-list">
-                    <li>• Homem</li>
-                    <li>• Nascido em 1968</li>
-                    <li>• Mora no Sudeste</li>
-                    <li>• Cantor e Escritor</li>
-                    <li>• Líder de comunidade</li>
-                </ul>
-            </div>
-        </div>
+    <!-- Segunda Imagem: Marcelos -->
+    <div class="image-container">
+        <img src="src/images/Marcelos.jpg" alt="Comparativo Marcelo Camelo e Padre Marcelo Rossi">
+        <div class="image-caption">Figura 2: Alinhamento demogrÃ¡fico regional e profissional que esconde jornadas de usuÃ¡rio completamente diferentes.</div>
     </div>
 
     <h2>UX/UI Design Focado na Persona</h2>
-    <p>Para o profissional de UX, a persona atua como um instrumento indispensável para aprofundar o conhecimento sobre a audiência, viabilizando a criação de interfaces e fluxos totalmente pautados no <strong>Design Centrado no Usuário (UCD)</strong>.</p>
-    <p>Não basta coletar e acumular métricas frias sobre o público-alvo; é mandatório segmentar, agrupar e humanizar esses dados para decodificar quem a persona realmente é. Com essas definições documentadas, a equipe do projeto conquista benefícios vitais:</p>
+    <p>Para o profissional de UX, a persona atua como um instrumento indispensÃ¡vel para aprofundar o conhecimento sobre a audiÃªncia, viabilizando a criaÃ§Ã£o de interfaces e fluxos totalmente pautados no <strong>Design Centrado no UsuÃ¡rio (UCD)</strong>.</p>
+    <p>NÃ£o basta coletar e acumular mÃ©tricas frias sobre o pÃºblico-alvo; Ã© mandatÃ³rio segmentar, agrupar e humanizar esses dados para decodificar quem a persona realmente Ã©. Com essas definiÃ§Ãµes documentadas, a equipe do projeto conquista benefÃ­cios vitais:</p>
     <ul>
-        <li>Mantém sempre em mente para quem o produto ou funcionalidade está sendo construído;</li>
-        <li>Toma decisões técnicas e de design alinhadas estritamente ao perfil da persona;</li>
+        <li>MantÃ©m sempre em mente para quem o produto ou funcionalidade estÃ¡ sendo construÃ­do;</li>
+        <li>Toma decisÃµes tÃ©cnicas e de design alinhadas estritamente ao perfil da persona;</li>
         <li>Estabelece um objetivo claro e um foco compartilhado por todo o time de desenvolvimento.</li>
     </ul>
 
-    <h2>Quais os Benefícios de Utilizar Personas?</h2>
-    <p>Os ganhos ao se desenhar personas estendem-se a todos os elos da cadeia: a empresa, os designers, o produto e, principalmente, o usuário final. O principal objetivo é estabelecer representações altamente confiáveis e tangíveis dos usuários para servir de bússola em decisões presentes e futuras.</p>
+    <h2>Quais os BenefÃ­cios de Utilizar Personas?</h2>
+    <p>Os ganhos ao se desenhar personas estendem-se a todos os elos da cadeia: a empresa, os designers, o produto e, principalmente, o usuÃ¡rio final. O principal objetivo Ã© estabelecer representaÃ§Ãµes altamente confiÃ¡veis e tangÃ­veis dos usuÃ¡rios para servir de bÃºssola em decisÃµes presentes e futuras.</p>
     
     <h3>Impacto nas Equipes Multidiscipinares:</h3>
     <ul>
-        <li><strong>Stakeholders:</strong> Conseguem avaliar novos requisitos e ideias sob a ótica real do cliente, validando investimentos de forma estratégica.</li>
-        <li><strong>Arquitetos de Informação:</strong> Estruturam a navegação, taxonomia e fluxos de telas de maneira totalmente coerente com os hábitos de busca e interação do usuário.</li>
-        <li><strong>Designers Visuais:</strong> Definem paletas de cores, tipografias e toda a atmosfera estética do produto guiados pela sensibilidade e contexto da persona.</li>
-        <li><strong>Desenvolvedores:</strong> Escolhem abordagens arquiteturais e de performance com base nas limitações tecnológicas e contextos em que o usuário opera.</li>
-        <li><strong>Redatores / UX Writers:</strong> Calibram o tom de voz, a linguagem e as mensagens do sistema, garantindo uma comunicação fluida e adequada à persona.</li>
+        <li><strong>Stakeholders:</strong> Conseguem avaliar novos requisitos e ideias sob a Ã³tica real do cliente, validando investimentos de forma estratÃ©gica.</li>
+        <li><strong>Arquitetos de InformaÃ§Ã£o:</strong> Estruturam a navegaÃ§Ã£o, taxonomia e fluxos de telas de maneira totalmente coerente com os hÃ¡bitos de busca e interaÃ§Ã£o do usuÃ¡rio.</li>
     </ul>
 
-    <h2>Exemplo de Ficha Prática de Persona (Slide: Sara)</h2>
-    <p>Abaixo está representada a estrutura documental completa de uma persona, consolidando todos os dados de pesquisa em um formato de consulta rápida para o time de desenvolvimento:</p>
+    <h2>Exemplo PrÃ¡tico de Ficha de Persona</h2>
+    <p>Abaixo estÃ¡ documentado o mapeamento final de um perfil real condensado em uma ficha de persona, detalhando comportamentos, objetivos e dores para consulta de toda a equipe:</p>
 
-    <!-- Recriação Visual e Textual do Slide da Persona Sara -->
-    <div class="persona-card">
-        <div class="persona-sidebar">
-            <div style="width: 80px; height: 80px; background-color: #d35400; border-radius: 50%; margin: 0 auto 10px auto;"></div>
-            <div class="persona-title" style="text-align:center; font-size: 13pt;">SARA</div>
-            <div class="persona-subtitle" style="text-align:center;">"The Bookworm"</div>
-            
-            <div class="persona-section-title">Dados Básicos</div>
-            <div class="persona-meta-item"><strong>Idade:</strong> 28 anos</div>
-            <div class="persona-meta-item"><strong>Ocupação:</strong> Bibliotecária</div>
-            <div class="persona-meta-item"><strong>Educação:</strong> Bacharel em Biblioteconomia</div>
-            <div class="persona-meta-item"><strong>Local:</strong> Campo Grande, RJ</div>
-        </div>
-        
-        <div class="persona-main-content">
-            <p style="font-size: 10pt; font-style: italic; color: #555;">"Eu amo passar o meu tempo lendo e aprendendo sobre as coisas."</p>
-            
-            <div class="persona-section-title">Atributos</div>
-            <p style="font-size: 9.5pt; margin-bottom: 10px;">Bruna simplesmente ama ler qualquer coisa que apareça na sua frente. Prefere livros físicos, mas como mora muito longe do seu local de trabalho, ela sempre lê a Wikipédia no caminho de volta para casa.</p>
-            
-            <div class="persona-section-title">Objetivos (Goals)</div>
-            <ul style="font-size: 9.5pt; margin-bottom: 10px; padding-left: 15px;">
-                <li>Conhecer diferentes culturas e formas de pensar.</li>
-                <li>Ler o máximo de livros possíveis.</li>
-            </ul>
-            
-            <div class="persona-section-title">Pontos de Dor (Pain Points)</div>
-            <ul style="font-size: 9.5pt; margin-bottom: 10px; padding-left: 15px;">
-                <li>Ler muitos textos longos que não são úteis para o seu trabalho final.</li>
-                <li>Às vezes precisa fazer horas extras no estágio.</li>
-                <li>Tempo limitado para realizar as suas pesquisas.</li>
-            </ul>
-
-            <div class="persona-section-title">Personalidade & Interesses</div>
-            <p style="font-size: 9.5pt; margin: 0;">Perspicaz (Insightful), Esforçada (Hard working), Curiosa. Gosta de ler romances, biografias, ir ao cinema e usar redes sociais.</p>
-        </div>
+    <!-- Terceira Imagem: Ficha da Sara -->
+    <div class="image-container" style="margin-top: 15px;">
+        <img src="src/images/Sara.PNG" alt="Ficha de Persona - Sara The Bookworm">
+        <div class="image-caption">Figura 3: Modelo real de documentaÃ§Ã£o de Persona (Sara, "The Bookworm") com objetivos e pontos de dor mapeados.</div>
     </div>
 
     <h2>Como Construir e Estruturar uma Persona</h2>
-    <p>Como regra de ouro no design de interação, recomenda-se <strong>não criar mais do que três ou quatro personas por projeto</strong>. Um escopo que ultrapasse esse limite infla o projeto de tal forma que o produto corre o risco de tentar abraçar o mundo e acabar não solucionando o problema de ninguém de forma satisfatória.</p>
+    <p>Como regra de ouro no design de interaÃ§Ã£o, recomenda-se <strong>nÃ£o criar mais do que trÃªs ou quatro personas por projeto</strong>. Um escopo que ultrapasse esse limite infla o projeto de tal forma que o produto corre o risco de tentar abraÃ§ar o mundo e acabar nÃ£o solucionando o problema de ninguÃ©m de forma satisfatÃ³ria.</p>
 
     <div class="example-box">
         <div class="title">Curiosidade de Mercado no Desenvolvimento</div>
-        <p style="margin: 0; font-size: 10pt;">Pesquisas de mercado revelam um comportamento assimétrico entre empresas: pequenas empresas costumam empenhar a maior parte do tempo na fase de <em>Pesquisa e Coleta</em>. Em contrapartida, grandes corporações demandam mais tempo na fase de <em>Criação e Refinamento da Persona</em>. Isso decorre do fato de que produtos consolidados geram volumes colossais de dados analíticos, tornando o processo de síntese e isolamento do cliente perfeito muito mais complexo.</p>
+        <p style="margin: 0; font-size: 10pt;">Pesquisas de mercado revelam um comportamento assimÃ©trico entre empresas: pequenas empresas costumam empenhar a maior parte do tempo na fase de <em>Pesquisa e Coleta</em>. Em contrapartida, grandes corporaÃ§Ãµes demandam mais tempo na fase de <em>CriaÃ§Ã£o e Refinamento da Persona</em>. Isso decorre do fato de que produtos consolidados geram volumes colossais de dados analÃ­ticos, tornando o processo de sÃ­ntese e isolamento do cliente perfeito muito mais complexo.</p>
     </div>
 
-    <h2>Revisão Constante e Por Que Personas Falham</h2>
-    <p>As personas representam seres humanos e, portanto, não podem ser tratadas como documentos estáticos. O comportamento humano evolui constantemente, impulsionado pelo surgimento de novas tecnologias, tendências e pelo aprimoramento de produtos concorrentes. Se as necessidades e expectativas do mercado mudam, a persona obrigatoriamente precisa ser atualizada por meio de pesquisas periódicas para não se tornar obsoleta.</p>
+    <h2>RevisÃ£o Constante e Por Que Personas Falham</h2>
+    <p>As personas representam seres humanos e, portanto, nÃ£o podem ser tratadas como documentos estÃ¡ticos. O comportamento humano evolui constantemente, impulsionado pelo surgimento de novas tecnologias, tendÃªncias e pelo aprimoramento de produtos concorrentes. Se as necessidades e expectativas do mercado mudam, a persona obrigatoriamente precisa ser atualizada por meio de pesquisas periÃ³dicas para nÃ£o se tornar obsoleta.</p>
 
-    <h3>Os 5 Principais Motivos de Falha na Aplicação de Personas:</h3>
+    <h3>Os 5 Principais Motivos de Falha na AplicaÃ§Ã£o de Personas:</h3>
     <ol>
-        <li><strong>Criada, mas nunca utilizada:</strong> O documento é finalizado com excelência estética, mas fica esquecido em uma pasta, sem aplicação prática no dia a dia do desenvolvimento.</li>
-        <li><strong>Criada de forma isolada e imposta:</strong> A equipe de UX desenvolve a persona em uma "bolha" e tenta impô-la ao restante da empresa sem construir um processo colaborativo.</li>
-        <li><strong>Falha grave de comunicação:</strong> Os membros da equipe ou stakeholders não foram devidamente aculturados e desconhecem a utilidade ou o propósito da persona.</li>
-    </ul>
+        <li><strong>Criada, mas nunca utilizada:</strong> O documento Ã© finalizado com excelÃªncia estÃ©tica, mas fica esquecido em uma pasta, sem aplicaÃ§Ã£o prÃ¡tica no dia a dia do desenvolvimento.</li>
+        <li><strong>Criada de forma isolada e imposta:</strong> A equipe de UX desenvolve a persona em uma "bolha" e tenta impÃ´-la ao restante da empresa sem construir um processo colaborativo.</li>
+        <li><strong>Falha grave de comunicaÃ§Ã£o:</strong> Os membros da equipe ou stakeholders nÃ£o foram devidamente aculturados e desconhecem a utilidade ou o propÃ³sito da persona.</li>
+        <li><strong>Falhas fundamentais de escopo:</strong> A equipe tenta forÃ§ar o uso de uma determinada persona para um propÃ³sito ou produto completamente desalinhado com suas caracterÃ­sticas originais.</li>
+        <li><strong>AusÃªncia crÃ´nica de atualizaÃ§Ã£o:</strong> A persona Ã© concebida com maestria na fase de descoberta (discovery) inicial do projeto, mas nunca mais passa por uma nova rodada de validaÃ§Ã£o com usuÃ¡rios reais ao longo dos anos.</li>
+    </ol>
 
 </body>
 </html>
